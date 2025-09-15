@@ -23,7 +23,7 @@ We're looking for candidates that:
 - Love the idea of working closely with customers to build a product used daily
   to respond to critical incidents.
 - Are excited by the opportunity to build software used by some of the most
-  recognisable names in tech: Etsy, Skyscanner, Vercel, Linear and more that we
+  recognisable names in tech: OpenAI, Netflix, Lovable, Linear and more that we
   can't share yet!
 
 Do not apply if:

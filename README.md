@@ -57,7 +57,7 @@ The full candidate process will be:
 2. If accepted, we'll ask you to provide either:
     - Existing product you're proud of.
     - Solution to our take home test.
-3. If successful, we'll invite you for an on-site interview on November 18th (interns and placement) or December 16th (grads).
+3. If successful, you'll be invited to an on-site interview — scheduled for November 11th or 13th for interns and placement students, or November 25th or 27th for graduates
 
 Please apply via the [job link][job-ad] and we'll share everything you need to
 know, but for more detail on step (2) read below:

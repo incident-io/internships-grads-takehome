@@ -37,30 +37,14 @@ We're not looking candidates that are:
 - Prefer to work solo: we're highly collaborative and all your work will
   happen as part of a team.
 
-## Application process
-
-Please apply via our [Product Engineer Intern][job-ad] job posting. When
-applying, include a CV detailing education and past experience and a cover
-letter that explains why incident.io is particularly exciting to you.
-
-We care more about the cover letter than the CV, so think carefully about why
-this role is something you would do well in! Make sure to read [What is this
-role?](#what-is-this-role) as we're looking for reasons you would be a good
-match against that description.
-
 > Pro-tip: you can get a sense of engineering at incident.io by reading our
 > [engineering blog](https://incident.io/blog/engineering).
 
 The full candidate process will be:
 
-1. Apply with cover letter.
-2. If accepted, we'll ask you to provide either:
-    - Existing product you're proud of.
-    - Solution to our take home test.
+1. Apply with cover letter
+2. If accepted, we'll ask you to provide a solution to our take home test
 3. If successful, you'll be invited to an on-site interview — scheduled for November 11th or 13th for interns and placement students, or November 25th or 27th for graduates
-
-Please apply via the [job link][job-ad] and we'll share everything you need to
-know, but for more detail on step (2) read below:
 
 ## 2. Complete our take-home challenge
 
@@ -176,10 +160,8 @@ Entries should be truncated to match the from/until parameters.
 
 ### Code submission and video explanation
 
-Once we've reviewed your CV, we'll send you instructions on where to send your
-solution. We'll expect a ZIP file containing the code, plus a `README.md` that
+We'll expect a ZIP file containing the code, a 5-minute video explanation (see blow) and a `README.md` that
 includes:
-
 - Instructions on running your code, including installation of dependencies.
 - Comments on code structure/how you approached the problem you think may be
   useful.

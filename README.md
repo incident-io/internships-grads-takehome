@@ -26,15 +26,15 @@ We're looking for candidates that:
   recognisable names in tech: OpenAI, Netflix, Lovable, Linear and more that we
   can't share yet!
 
-Do not apply if:
+We're not looking candidates that are:
 
-- You're looking for an 'intern' project: this placement will have you doing
+- Looking for an 'intern' project: this placement will have you doing
   real work and we'll make little distinction between an intern and a fulltime
   engineering hire.
-- You don't enjoy learning new technologies by 'doing': we expect engineers to
+- Don't enjoy learning new technologies by 'doing': we expect engineers to
   get involved building and learn as they go (most have learned Go while on the
   job, as an example).
-- You prefer to work solo: we're highly collaborative and all your work will
+- Prefer to work solo: we're highly collaborative and all your work will
   happen as part of a team.
 
 ## Application process
@@ -62,33 +62,7 @@ The full candidate process will be:
 Please apply via the [job link][job-ad] and we'll share everything you need to
 know, but for more detail on step (2) read below:
 
-## 1. Existing project you're proud of
-
-Have you built something you're proud of, or think showcases skills that would
-be valuable for this role?
-
-If so, we invite you to submit this project in leiu of a take-home challenge.
-
-An ideal project would:
-
-- Be a software project that solves a real problem.
-- Demonstrate your ability to build high-quality software.
-- Provide enough context (often through a README) that would allow anyone
-  grading your code to get setup and run it.
-
-We'll only accept submissions where you are the primary contributor to the
-project: group projects are great but become extremely difficult to evaluate
-fairly!
-
-**Important: Please also attach a (maximum) 5-minute Loom explaining:**
-1. Overview of your solution
-2. Key technical decisions
-3. Trade-offs and alternatives (what would you do differently next time?)
-4. Final reflection (what did you find challenging/interesting/tricky?)
-
 ## 2. Complete our take-home challenge
-
-Instead, you could try solving the following code challenge.
 
 ### Intro
 
@@ -115,20 +89,19 @@ like this:
     "charlie"
   ],
 
-  // 5pm, Friday 17th November 2023
-  "handover_start_at": "2023-11-17T17:00:00Z",
+  // 5pm, Friday 7th November 2025
+  "handover_start_at": "2025-11-07T17:00:00Z",
   "handover_interval_days": 7
 }
 ```
 
-In that example, our schedule will rotate evenly between those users with the
-first shift starting at 5pm Friday 17th, with shift changes happening every 7
-days.
+In that example, our schedule will rotate evenly between those users with the first shift starting at 5pm, 
+Friday 7th November 2025, with shift changes happening every 7 days.
 
 That means:
 
-- Alice takes the shift for 1 week, starting at 5pm, Friday 17th November
-- Then Bob is on-call for 1 week from 5pm, Friday 24th November
+- Alice takes the shift for 1 week, starting at 5pm, Friday 7th November 2025
+- Then Bob is on-call for 1 week from 5pm, Friday 14th November 2025
 - Then Charlie, then...
 - Back to Alice again.
 
@@ -140,19 +113,18 @@ Schedule systems often support 'overrides' where you can add temporary shift
 modifications to a schedule, such as if someone wants to go walk their dog or go
 to the cinema.
 
-An override specifies the person that will take the shift and the time period it
-covers. An example of Charlie covering 5pm-10pm on Monday 20th November would
-look like this:
+An override specifies the person that will take the shift and the time period it covers.
+An example of Charlie covering 5pm–10pm on Monday 10th November 2025 would look like this:
 
 ```js
 // This is an override.
 {
   // Charlie will cover this shift
   "user": "charlie",
-  // 5pm, Monday 20th November 2023
-  "start_at": "2023-11-20T17:00:00Z",
-  // 10pm, Monday 20th November 2023
-  "end_at": "2023-11-20T22:00:00Z"
+  // 5pm, Monday 10th November 2025
+  "start_at": "2025-11-10T17:00:00Z",
+  // 10pm, Monday 10th November 2025
+  "end_at": "2025-11-10T22:00:00Z"
 }
 ```
 
@@ -168,18 +140,18 @@ It should be run like so:
 $ ./render-schedule \
     --schedule=schedule.json \
     --overrides=overrides.json \
-    --from='2023-11-17T17:00:00Z' \
-    --until='2023-12-01T17:00:00Z'
+    --from='2025-11-07T17:00:00Z' \
+    --until='2025-11-21T17:00:00Z'
 [
   {
     "user": "alice",
-    "start_at": "2023-11-20T17:00:00Z",
-    "end_at": "2023-11-20T17:00:00Z"
+    "start_at": "2025-11-10T17:00:00Z",
+    "end_at": "2025-11-10T22:00:00Z"
   },
   {
     "user": "bob",
-    "start_at": "2023-11-20T17:00:00Z",
-    "end_at": "2023-12-01T17:00:00Z"
+    "start_at": "2025-11-10T22:00:00Z",
+    "end_at": "2025-11-21T17:00:00Z"
   }
 ]
 ```
@@ -195,11 +167,10 @@ The script should output a JSON array of final schedule as a list of entries.
 This should take into account the projected entries (based on the handover
 information in the schedule) alongside the provided overrides.
 
-Your schedule should also be truncated based on the from/until parameters
-provided. For example, if an entry was from 1pm November 17 -> 1pm November
-19th, but from was 2pm November 18th, the entry should be returned as 2pm
-November 18th -> 1pm November 19th (ignoring the part of the entry that is
-outside the provided range).
+Your schedule should also be truncated based on the from and until parameters provided. 
+For example, if an entry was from 1pm November 7 → 1pm November 9, 
+but from was 2pm November 8, the entry should be returned as 2pm November 8 → 1pm November 9 
+(ignoring the part of the entry that is outside the provided range).
 
 Entries should be truncated to match the from/until parameters.
 
@@ -216,7 +187,7 @@ includes:
   you might build on top of this (if you think how we'd use this at incident.io,
   for example).
 
-**Important: Please also attach a (maximum) 5-minute Loom explaining:**
+**Important: Please also attach a (maximum) 5-minute video explaining:**
 1. Overview of your solution
 2. Key technical decisions
 3. Trade-offs and alternatives (what would you do differently next time?)

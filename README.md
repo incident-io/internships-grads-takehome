@@ -7,8 +7,6 @@ We're on a mission to build the single place you turn to when things go wrong. O
 incident.io is now offering internships, placements, and graduate programmes for student engineers, 
 providing you the chance to be at the forefront of innovation through 3-month, 6-month, 1-year placements, or by joining as a full-time graduate.
 
-You can apply [here][job-ad] or read about the role below.
-
 ## What is the role?
 
 This application is for a Product Engineer role: [watch this
@@ -46,7 +44,7 @@ The full candidate process will be:
 2. If accepted, we'll ask you to provide a solution to our take home test
 3. If successful, you'll be invited to an on-site interview — scheduled for November 11th or 13th for interns and placement students, or November 25th or 27th for graduates
 
-## 2. Complete our take-home challenge
+## Complete our take-home challenge
 
 ### Intro
 

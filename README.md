@@ -110,6 +110,9 @@ An example of Charlie covering 5pm–10pm on Monday 10th November 2025 would loo
 }
 ```
 
+You can assume that overrides will always be after the schedule's `handover_start_at`, and won't 
+overlap with each other.
+
 ### Task
 
 We would like you to build – in any language you choose, but ideally one you are
@@ -127,12 +130,22 @@ $ ./render-schedule \
 [
   {
     "user": "alice",
+    "start_at": "2025-11-07T17:00:00Z",
+    "end_at": "2025-11-10T17:00:00Z"
+  },
+  {
+    "user": "charlie",
     "start_at": "2025-11-10T17:00:00Z",
     "end_at": "2025-11-10T22:00:00Z"
   },
   {
-    "user": "bob",
+    "user": "alice",
     "start_at": "2025-11-10T22:00:00Z",
+    "end_at": "2025-11-14T17:00:00Z"
+  },
+  {
+    "user": "bob",
+    "start_at": "2025-11-14T17:00:00Z",
     "end_at": "2025-11-21T17:00:00Z"
   }
 ]
@@ -143,7 +156,7 @@ Where:
 - `--schedule` JSON file containing a definition of a schedule (see above example)
 - `--overrides` JSON file containing an array of overrides (see above example)
 - `--from` the time from which to start listing entries
-- `--until` the time until which to listing entries
+- `--until` the time until which to list entries
 
 The script should output a JSON array of final schedule as a list of entries.
 This should take into account the projected entries (based on the handover
@@ -155,6 +168,9 @@ but from was 2pm November 8, the entry should be returned as 2pm November 8 → 
 (ignoring the part of the entry that is outside the provided range).
 
 Entries should be truncated to match the from/until parameters.
+
+We care more about correctness than performance: we will only run your code for
+time windows up to a few weeks, and with under 100 overrides.
 
 ### Code submission and video explanation
 
@@ -170,6 +186,9 @@ In the 'notes' field, include a link to a 5-minute video explaining:
 - How your code implements that solution
 - Now you've built the scheduler, what other product features might you build
   on top of this
+
+Imagine you're showing this code to a new team-mate: your video should get
+them up-to-speed on the codebase.
 
 (We recommend [Loom](https://www.loom.com) for recording this, but you're welcome 
 to use any other tool you're comfortable with).
